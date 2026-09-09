@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08FC7FABFCCAC4D8AE57C298 /* RecordingPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63263B574D49CCABA58DEF3 /* RecordingPreferences.swift */; };
+		0EC365509A2601AAFC369AF0 /* RecordingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AF8841D317B75C1749A78 /* RecordingState.swift */; };
+		2D3A6870B847665058ED86B2 /* YouTubeURLValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BA02260F3B8AEFA2BC581 /* YouTubeURLValidator.swift */; };
+		34F5BEF723E5E54C0A89D69D /* YTDLPOutputParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A77491103B86592163DFA5 /* YTDLPOutputParser.swift */; };
+		35031FA2CE73B2741B19A78D /* MediaTimelineInspectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A13FB43409F5185E70BDF /* MediaTimelineInspectorTests.swift */; };
+		3EBC75B8F3463625FF416EFF /* CompletedFileLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED37143279706A6D955497 /* CompletedFileLocator.swift */; };
+		458E5887485B60D85D9CE4C7 /* VideoFinalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C1CD84EDDCF40A8B7B6236 /* VideoFinalizer.swift */; };
+		573ACC0FFF05DB534208ECED /* CookieBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A89C016E703EEF93C3F7A0B /* CookieBrowser.swift */; };
+		5DA4F86AE0ED094F506A02F9 /* ToolchainLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2EFBE9C6B1F0929A01B52 /* ToolchainLocatorTests.swift */; };
+		63DAA59D565C4604CF224B13 /* StreamRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740D2277E829294D5274A93 /* StreamRecorderApp.swift */; };
+		64CA3D4933A0C5BC53BF71B6 /* InterruptedTailAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AB5769A8BFF588267D5C5A /* InterruptedTailAnalyzer.swift */; };
+		6609A9A995AA11E7CC515394 /* CookieBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D21578FFAE8394A13C7C588 /* CookieBrowserTests.swift */; };
+		719129638C397D257DD0BA2A /* VideoFinalizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB35E44BD3CACA61F9B403 /* VideoFinalizerTests.swift */; };
+		7A1EF84D2CED02A04BD8B08B /* YouTubeURLValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4190D0BC756A18475E0E19B2 /* YouTubeURLValidatorTests.swift */; };
+		7E002E39F589B10A77925EDD /* CompletedFileLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48B356DF4701AA690A0956A /* CompletedFileLocatorTests.swift */; };
+		7F05B15BCF715D037E771951 /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB37EC4E6679DCAA45FDBB5 /* ApplicationDelegate.swift */; };
+		9269589B1FD24CF293DA6511 /* RecordingStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE710EBF540D1167BF800BCB /* RecordingStateTests.swift */; };
+		9454FF6AA8A3222F3D3131B8 /* YTDLPOutputParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2072C6204DF912E6D4205B /* YTDLPOutputParserTests.swift */; };
+		9CB4441F6C01BF468179F79F /* MediaTimelineInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6429D9A1427B0C7E51B65 /* MediaTimelineInspector.swift */; };
+		A9A55B1371994A020333D9D5 /* RecordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A214183001D6376C93AD79DB /* RecordingController.swift */; };
+		C32D6325B2FFE8855E884E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B5D109693273D33FDFD69E /* Assets.xcassets */; };
+		CDB6D2F2B02CD50DF42074BA /* YTDLPCommandBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FC971CD3B88138554C7DA0 /* YTDLPCommandBuilderTests.swift */; };
+		E4854F0BA86273770F1473EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D54A2BB4AC569EBE0575CCC /* ContentView.swift */; };
+		EEF2239D0EE5F0F8BCE3858A /* RecordingPreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65196B85A81E7E20CD189E0 /* RecordingPreferencesTests.swift */; };
+		F5769D0E952E8D12323025E3 /* ToolchainLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE20A74D548C1F60AF5896B /* ToolchainLocator.swift */; };
+		FF2D0C5F3917A457B09E3600 /* YTDLPCommandBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B48AAAC3095F319A00DC1C5 /* YTDLPCommandBuilder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6440DED28E8BA4561D3ABFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31872A882292FBA39EA19E93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 242C1E378DE8B249612AE412;
+			remoteInfo = StreamRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D2EFBE9C6B1F0929A01B52 /* ToolchainLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolchainLocatorTests.swift; sourceTree = "<group>"; };
+		1D21578FFAE8394A13C7C588 /* CookieBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieBrowserTests.swift; sourceTree = "<group>"; };
+		21FC971CD3B88138554C7DA0 /* YTDLPCommandBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTDLPCommandBuilderTests.swift; sourceTree = "<group>"; };
+		2AED37143279706A6D955497 /* CompletedFileLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedFileLocator.swift; sourceTree = "<group>"; };
+		2B48AAAC3095F319A00DC1C5 /* YTDLPCommandBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTDLPCommandBuilder.swift; sourceTree = "<group>"; };
+		31C1CD84EDDCF40A8B7B6236 /* VideoFinalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFinalizer.swift; sourceTree = "<group>"; };
+		4190D0BC756A18475E0E19B2 /* YouTubeURLValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeURLValidatorTests.swift; sourceTree = "<group>"; };
+		45FB35E44BD3CACA61F9B403 /* VideoFinalizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFinalizerTests.swift; sourceTree = "<group>"; };
+		4CD6429D9A1427B0C7E51B65 /* MediaTimelineInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTimelineInspector.swift; sourceTree = "<group>"; };
+		4D2958320C77495D87581A7D /* StreamRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D54A2BB4AC569EBE0575CCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		51B5D109693273D33FDFD69E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FCF9E1564A660533449BC3D /* StreamRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A89C016E703EEF93C3F7A0B /* CookieBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieBrowser.swift; sourceTree = "<group>"; };
+		814A13FB43409F5185E70BDF /* MediaTimelineInspectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTimelineInspectorTests.swift; sourceTree = "<group>"; };
+		9A2BA02260F3B8AEFA2BC581 /* YouTubeURLValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeURLValidator.swift; sourceTree = "<group>"; };
+		9DE20A74D548C1F60AF5896B /* ToolchainLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolchainLocator.swift; sourceTree = "<group>"; };
+		A214183001D6376C93AD79DB /* RecordingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingController.swift; sourceTree = "<group>"; };
+		B3AB5769A8BFF588267D5C5A /* InterruptedTailAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterruptedTailAnalyzer.swift; sourceTree = "<group>"; };
+		C740D2277E829294D5274A93 /* StreamRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamRecorderApp.swift; sourceTree = "<group>"; };
+		CB2072C6204DF912E6D4205B /* YTDLPOutputParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTDLPOutputParserTests.swift; sourceTree = "<group>"; };
+		D3A77491103B86592163DFA5 /* YTDLPOutputParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTDLPOutputParser.swift; sourceTree = "<group>"; };
+		F15AF8841D317B75C1749A78 /* RecordingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingState.swift; sourceTree = "<group>"; };
+		F48B356DF4701AA690A0956A /* CompletedFileLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedFileLocatorTests.swift; sourceTree = "<group>"; };
+		F63263B574D49CCABA58DEF3 /* RecordingPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingPreferences.swift; sourceTree = "<group>"; };
+		F65196B85A81E7E20CD189E0 /* RecordingPreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingPreferencesTests.swift; sourceTree = "<group>"; };
+		FE710EBF540D1167BF800BCB /* RecordingStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingStateTests.swift; sourceTree = "<group>"; };
+		FEB37EC4E6679DCAA45FDBB5 /* ApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2E20840875709FD0F2F8FE60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D2958320C77495D87581A7D /* StreamRecorder.app */,
+				5FCF9E1564A660533449BC3D /* StreamRecorderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		379A5391006FB4EFEB68801E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D54A2BB4AC569EBE0575CCC /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		612C9934577902824769C2B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A89C016E703EEF93C3F7A0B /* CookieBrowser.swift */,
+				F63263B574D49CCABA58DEF3 /* RecordingPreferences.swift */,
+				F15AF8841D317B75C1749A78 /* RecordingState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		906955D2D6C8DF5869EFF188 /* StreamRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				51B5D109693273D33FDFD69E /* Assets.xcassets */,
+				C9DE23B2EC1B9B34A6D2C784 /* App */,
+				A4D49047542B17285390027B /* Controllers */,
+				612C9934577902824769C2B8 /* Models */,
+				D17A9FF19B328B16136D6390 /* Services */,
+				379A5391006FB4EFEB68801E /* Views */,
+			);
+			path = StreamRecorder;
+			sourceTree = "<group>";
+		};
+		90D270E9E6FF517A37243C7C /* StreamRecorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F48B356DF4701AA690A0956A /* CompletedFileLocatorTests.swift */,
+				1D21578FFAE8394A13C7C588 /* CookieBrowserTests.swift */,
+				814A13FB43409F5185E70BDF /* MediaTimelineInspectorTests.swift */,
+				F65196B85A81E7E20CD189E0 /* RecordingPreferencesTests.swift */,
+				FE710EBF540D1167BF800BCB /* RecordingStateTests.swift */,
+				01D2EFBE9C6B1F0929A01B52 /* ToolchainLocatorTests.swift */,
+				45FB35E44BD3CACA61F9B403 /* VideoFinalizerTests.swift */,
+				4190D0BC756A18475E0E19B2 /* YouTubeURLValidatorTests.swift */,
+				21FC971CD3B88138554C7DA0 /* YTDLPCommandBuilderTests.swift */,
+				CB2072C6204DF912E6D4205B /* YTDLPOutputParserTests.swift */,
+			);
+			path = StreamRecorderTests;
+			sourceTree = "<group>";
+		};
+		A30A5B453AB9A53C395F1352 = {
+			isa = PBXGroup;
+			children = (
+				906955D2D6C8DF5869EFF188 /* StreamRecorder */,
+				90D270E9E6FF517A37243C7C /* StreamRecorderTests */,
+				2E20840875709FD0F2F8FE60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4D49047542B17285390027B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A214183001D6376C93AD79DB /* RecordingController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C9DE23B2EC1B9B34A6D2C784 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FEB37EC4E6679DCAA45FDBB5 /* ApplicationDelegate.swift */,
+				C740D2277E829294D5274A93 /* StreamRecorderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D17A9FF19B328B16136D6390 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2AED37143279706A6D955497 /* CompletedFileLocator.swift */,
+				B3AB5769A8BFF588267D5C5A /* InterruptedTailAnalyzer.swift */,
+				4CD6429D9A1427B0C7E51B65 /* MediaTimelineInspector.swift */,
+				9DE20A74D548C1F60AF5896B /* ToolchainLocator.swift */,
+				31C1CD84EDDCF40A8B7B6236 /* VideoFinalizer.swift */,
+				9A2BA02260F3B8AEFA2BC581 /* YouTubeURLValidator.swift */,
+				2B48AAAC3095F319A00DC1C5 /* YTDLPCommandBuilder.swift */,
+				D3A77491103B86592163DFA5 /* YTDLPOutputParser.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		242C1E378DE8B249612AE412 /* StreamRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809A012B19DD5D44638F1A74 /* Build configuration list for PBXNativeTarget "StreamRecorder" */;
+			buildPhases = (
+				9210182E56F1F82E647280C7 /* Sources */,
+				76EF5E7C84DBF0D8178A2303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreamRecorder;
+			packageProductDependencies = (
+			);
+			productName = StreamRecorder;
+			productReference = 4D2958320C77495D87581A7D /* StreamRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDD379EF1BCD76D848D8932E /* StreamRecorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4532D9109A986B9F8E46E21F /* Build configuration list for PBXNativeTarget "StreamRecorderTests" */;
+			buildPhases = (
+				06B19D4547FC61933EC38A71 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBC55D2B4A42516A20045587 /* PBXTargetDependency */,
+			);
+			name = StreamRecorderTests;
+			packageProductDependencies = (
+			);
+			productName = StreamRecorderTests;
+			productReference = 5FCF9E1564A660533449BC3D /* StreamRecorderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31872A882292FBA39EA19E93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					242C1E378DE8B249612AE412 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2AE3AA18AF0260690150AAA3 /* Build configuration list for PBXProject "StreamRecorder" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A30A5B453AB9A53C395F1352;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2E20840875709FD0F2F8FE60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				242C1E378DE8B249612AE412 /* StreamRecorder */,
+				BDD379EF1BCD76D848D8932E /* StreamRecorderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76EF5E7C84DBF0D8178A2303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32D6325B2FFE8855E884E2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06B19D4547FC61933EC38A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E002E39F589B10A77925EDD /* CompletedFileLocatorTests.swift in Sources */,
+				6609A9A995AA11E7CC515394 /* CookieBrowserTests.swift in Sources */,
+				35031FA2CE73B2741B19A78D /* MediaTimelineInspectorTests.swift in Sources */,
+				EEF2239D0EE5F0F8BCE3858A /* RecordingPreferencesTests.swift in Sources */,
+				9269589B1FD24CF293DA6511 /* RecordingStateTests.swift in Sources */,
+				5DA4F86AE0ED094F506A02F9 /* ToolchainLocatorTests.swift in Sources */,
+				719129638C397D257DD0BA2A /* VideoFinalizerTests.swift in Sources */,
+				CDB6D2F2B02CD50DF42074BA /* YTDLPCommandBuilderTests.swift in Sources */,
+				9454FF6AA8A3222F3D3131B8 /* YTDLPOutputParserTests.swift in Sources */,
+				7A1EF84D2CED02A04BD8B08B /* YouTubeURLValidatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9210182E56F1F82E647280C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F05B15BCF715D037E771951 /* ApplicationDelegate.swift in Sources */,
+				3EBC75B8F3463625FF416EFF /* CompletedFileLocator.swift in Sources */,
+				E4854F0BA86273770F1473EC /* ContentView.swift in Sources */,
+				573ACC0FFF05DB534208ECED /* CookieBrowser.swift in Sources */,
+				64CA3D4933A0C5BC53BF71B6 /* InterruptedTailAnalyzer.swift in Sources */,
+				9CB4441F6C01BF468179F79F /* MediaTimelineInspector.swift in Sources */,
+				A9A55B1371994A020333D9D5 /* RecordingController.swift in Sources */,
+				08FC7FABFCCAC4D8AE57C298 /* RecordingPreferences.swift in Sources */,
+				0EC365509A2601AAFC369AF0 /* RecordingState.swift in Sources */,
+				63DAA59D565C4604CF224B13 /* StreamRecorderApp.swift in Sources */,
+				F5769D0E952E8D12323025E3 /* ToolchainLocator.swift in Sources */,
+				458E5887485B60D85D9CE4C7 /* VideoFinalizer.swift in Sources */,
+				FF2D0C5F3917A457B09E3600 /* YTDLPCommandBuilder.swift in Sources */,
+				34F5BEF723E5E54C0A89D69D /* YTDLPOutputParser.swift in Sources */,
+				2D3A6870B847665058ED86B2 /* YouTubeURLValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBC55D2B4A42516A20045587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 242C1E378DE8B249612AE412 /* StreamRecorder */;
+			targetProxy = B6440DED28E8BA4561D3ABFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18B09B4A9EA86A4DB55F56FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		54D97FC08D5BE4F19D903A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Stream Recorder";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.StreamRecorder;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		649FD7CB7B0A0C0A2AF8024D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.StreamRecorderTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreamRecorder.app/Contents/MacOS/StreamRecorder";
+			};
+			name = Debug;
+		};
+		7F6F69BD010215B139818AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Stream Recorder";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.StreamRecorder;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7FDB7AD7C61244136400B517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.StreamRecorderTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreamRecorder.app/Contents/MacOS/StreamRecorder";
+			};
+			name = Release;
+		};
+		903E4BFB52C163D6F749111B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AE3AA18AF0260690150AAA3 /* Build configuration list for PBXProject "StreamRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				903E4BFB52C163D6F749111B /* Debug */,
+				18B09B4A9EA86A4DB55F56FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4532D9109A986B9F8E46E21F /* Build configuration list for PBXNativeTarget "StreamRecorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				649FD7CB7B0A0C0A2AF8024D /* Debug */,
+				7FDB7AD7C61244136400B517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		809A012B19DD5D44638F1A74 /* Build configuration list for PBXNativeTarget "StreamRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F6F69BD010215B139818AFA /* Debug */,
+				54D97FC08D5BE4F19D903A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31872A882292FBA39EA19E93 /* Project object */;
+}

@@ -1,0 +1,48 @@
+name: StreamRecorder
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+targets:
+  StreamRecorder:
+    type: application
+    platform: macOS
+    sources:
+      - StreamRecorder
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.StreamRecorder
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        GENERATE_INFOPLIST_FILE: true
+        INFOPLIST_KEY_CFBundleDisplayName: Stream Recorder
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.video
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_APP_SANDBOX: false
+        ENABLE_HARDENED_RUNTIME: true
+        CODE_SIGN_STYLE: Automatic
+  StreamRecorderTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - StreamRecorderTests
+    dependencies:
+      - target: StreamRecorder
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.StreamRecorderTests
+        GENERATE_INFOPLIST_FILE: true
+schemes:
+  StreamRecorder:
+    build:
+      targets:
+        StreamRecorder: all
+        StreamRecorderTests: [test]
+    test:
+      targets:
+        - StreamRecorderTests
